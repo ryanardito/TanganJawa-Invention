@@ -1,0 +1,274 @@
+html{margin: 0; padding: 0; margin: 0 auto; scroll-behavior: smooth;}
+body{margin: 0; padding: 0; margin: 0 auto; position: relative; z-index: 1;}
+@font-face{src: url('../font/axis.otf'); font-family: axis}
+@font-face{src: url('../font/RobotoSlab-Bold.ttf'); font-family: rb}
+@font-face{src: url('../font/RobotoSlab-Regular.ttf'); font-family: rr}
+@font-face{src: url('../font/RobotoSlab-Light.ttf'); font-family: rl}
+.d-flex{display: flex;}
+.j-str{justify-content: flex-start;}
+.j-end{justify-content: flex-end;}
+.j-ctr{justify-content: center;}
+.j-ard{justify-content: space-around;}
+.j-btw{justify-content: space-between;}
+.i-str{align-items: flex-start;}
+.i-end{align-items: flex-end;}
+.i-ctr{align-items: center;}
+.f-col{flex-flow: wrap column;}
+.f-row{flex-flow: wrap row;}
+.wrapper{width: 100%; height: max-content; margin: 0 auto; position: relative; z-index: 2}
+.max-content{width: 85%; height: max-content; margin: 0 auto;}
+
+/* login section */
+.login-left{flex: 1; width: 50%; height: 100vh; background-image: url('../img/product/batik1.jpg'); background-size: cover; background-position: center;}
+.login-right{flex: 1; width: 50%; height: 100vh;}
+.login-right .login{text-align: center; width: 80%; height: 70vh; }
+.login-right .login img{width: 300px; margin-bottom: 50px;}
+.login-right .login .form-group{width: 300px; height: max-content; margin: 20px auto; text-align: left;}
+.login-right .login .form-group label{font-family: rb; color: #000; font-size: 20px;}
+.login-right .login .form-group input{width: 255px; padding: 15px 20px; margin: 10px 0; font-family: rr; border: 2px solid #707070; outline: none}
+.login-right .login .form-group a{width: 100%; text-align: center; background-color: #000; text-decoration: none; color: #FFF; padding: 15px 0px; font-family: rr;}
+.login-right .login .daftar{color: #707070; font-family: rr;}
+.login-right .login .daftar a{font-family: rb; color: #F05849;}
+
+/* Register section */
+.daftar-right{flex: 1; width: 50%; height: 100vh; background-image: url('../img/product/batik2.jpg'); background-size: cover; background-position: center;}
+.daftar-left{flex: 1; width: 50%; height: 100vh;}
+.daftar-left .daftar{text-align: center; width: 80%; height: max-content; }
+.daftar-left .daftar img{width: 300px; margin-bottom: 30px;}
+.daftar-left .daftar .form-group{width: 300px; height: max-content; margin: 20px auto; text-align: left;}
+.daftar-left .daftar .form-group label{font-family: rb; color: #000; font-size: 20px;}
+.daftar-left .daftar .form-group input{width: 255px; padding: 15px 20px; margin: 10px 0; font-family: rr; border: 2px solid #707070; outline: none}
+.daftar-left .daftar .form-group a{width: 100%; text-align: center; background-color: #000; text-decoration: none; color: #FFF; padding: 10px 0px; font-family: rr;}
+.daftar-left .daftar .masuk{color: #707070; font-family: rr;}
+.daftar-left .daftar .masuk a{font-family: rb; color: #F05849;}
+
+
+/* navbar */
+.bg-nav-fixed{position: fixed; z-index: 999; transition: .5s}
+.bg-nav{width: 100%; height: 70px; z-index: 1000; background-color: #FFF; transition: .5s;}
+.bg-nav .logo img{ width: 150px}
+.bg-nav .menu ul{ list-style: none; cursor: default; }
+.bg-nav .menu ul li{ display: inline; margin: 0 15px;}
+.bg-nav .menu .active{ color: #F05849 }
+.bg-nav .menu ul li a{text-decoration: none; color: #707070; font-family: rr; font-size: 20px; transition: .5s}
+.bg-nav .menu ul li a:hover{ color: #F05849 }
+.bg-nav .menu .daftar{ padding: 5px 15px; color: #F05849; border: 2px solid #F05849}
+.bg-nav .menu .daftar:hover{ color: #FFF; background-color: #F05849 }
+.bg-nav svg{height: 50px;  width: 50px;}
+
+/* search */
+.bg-search{transform: translateY(-1000px); margin-top: 70px; position: fixed; width: 100%; height: 55vh; background-color: #F9F9F9; z-index: 100; transition: .5s}
+.bg-search-show{transform: translateY(0px); transition: .5s}
+.bg-search .search{width: 70%; height: max-content;}
+.bg-search .search .form-group{width: 100%; height: 10vh;}
+.bg-search .search .form-group input{width: 80%; padding: 15px; padding-left: 25px; font-family: rr; font-size: 20px; border: 2px solid #F05849; outline: none; text-transform: capitalize;}
+.bg-search .search .form-group input::placeholder{text-transform: none;}
+.bg-search .search .form-group a{ padding: 15px 30px; background-color: #F05849; color: #FFF; text-decoration: none; font-size: 20px; font-family: rr; border: 2px solid #F05849; margin-left: 5px;}
+.bg-search .wraplink{width: 100%; height: 25vh;}
+.bg-search .wraplink .quicklink{width: 30%; height: 30vh; }
+.bg-search .wraplink .quicklink h4{font-family: rb; font-size: 20px; padding-left: 20px;}
+.bg-search .wraplink .quicklink ul{ list-style: none; padding-left: 20px}
+.bg-search .wraplink .quicklink ul li{padding: 5px 0;}
+.bg-search .wraplink .quicklink ul li a{font-family: rb; text-decoration: none; color: #707070; transition: .3s;}
+.bg-search .wraplink .quicklink ul li a:hover{color: #F05849}
+.bg-search .wraplink .quicklink img{width: 70%;}
+.bg-search a i{position: absolute; right: 65px; top: -50px; font-size: 30px; color: #707070; transition: .5s;}
+.bg-search a i:hover{color: #F05849}
+
+/* cart */
+.bg-cart #close2{position: absolute; top: 10px; right: 65px; font-size: 30px; text-decoration: none; color: #707070;}
+.bg-cart{transform: translateX(1000px); width: 30%; height: 90vh; position: fixed; z-index: 100; margin-top: 70px; background-color: #FFF; right: 0; transform: .5s}
+.bg-cart-show{transform: translateX(0px); transition: .5s}
+.bg-cart .cart{ text-align: center; width: 80%; height: max-content; padding-bottom: 20px;}
+.bg-cart .cart .cart-group{width: 100%; height: 120px; background-color: #F9F9F9; margin: 15px 0; transition: .5s; cursor: pointer; }
+.bg-cart .cart .cart-group:hover{box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.8);}
+.bg-cart .cart .cart-group .img{width: 100px; height: 120px;}
+.bg-cart .cart .cart-group .img img{width: 70%;}
+.bg-cart .cart .cart-group .text{ width: 70%; text-align: left; padding-left: 10px; }
+.bg-cart .cart .cart-group .text h2{ font-family: rr; font-size: 20px; padding-left: 5px; margin: 10px 0; }
+.bg-cart .cart .cart-group .text h5{ font-family: rr; color: #707070; padding-left: 5px; margin: 10px 0;}
+.bg-cart .cart .cart-group .text h6{ display: inline;  font-family: rr; color: #707070; padding-left: 5px; margin: 10px 0; font-size: 15px;}
+.bg-cart .cart .cart-group .text input{ font-family: rb; width: 50px; margin-left: 10px; text-align: center; border: 1px solid #707070; color: #707070; background-color: #F9F9F9;}
+.bg-cart .cart .button-cart{ width: 100%; height: 50px; background-color: #000; }
+.bg-cart .cart .button-cart a{text-decoration: none; font-family: rr; color: #FFF;}
+.bg-cart .start{ color: #FFF; text-decoration: none; display: block; background-color: #F05849; padding: 10px 0; }
+
+/* banner */
+.bg-banner{margin-top: -70px; width: 100%; height: 100vh; position: relative; z-index: -1}
+.bg-banner .rec-red{ position: absolute; width: 30%; height: 200px; background-color: #F05849; opacity: .5; bottom: 5%;}
+.bg-banner .text{ flex: 3; width: 100%;}
+.bg-banner .text img{width: 300px;}
+.bg-banner .text h2{font-family: rr; font-weight: 500; font-size: 23px; margin-bottom: 30px;}
+.bg-banner .text h2 span{color: #F05849; font-weight: bold;}
+.bg-banner .text .explore{
+	text-decoration: none; 
+	padding: 10px 20px; 
+	background-color: #F05849; 
+	color: #FFF; 
+	font-size: 18px; 
+	font-family: rr;
+	transition: .5s;
+	border: 2px solid #F05849;
+	position: relative;
+	z-index: 100
+}
+.bg-banner .text .sell{
+	text-decoration: none; 
+	margin: 0 10px; 
+	padding: 10px 20px; 
+	background-color: #FFF; 
+	color: #F05849; 
+	font-size: 18px;
+	font-family: rr; 
+	border: 2px solid #F05849;
+	transition: .5s;
+	position: relative;
+	z-index: 100
+}
+.bg-banner .text .explore:hover, .bg-banner .text .sell:hover{ box-shadow: 0 0 30px #F05849; }
+.bg-banner .background{ flex: 4; width: 100%; background-image: url('../img/product/batik1.jpg'); background-size: cover; background-position: center;}
+
+/* categories */
+.bg-categories{width: 100%; height: max-content; padding-bottom: 10px; text-align: center; padding-top: 70px}
+.bg-categories h1{color: #F05849; font-family: rb; padding-top: 70px;}
+.bg-categories h3{color: #707070; font-family: rr; font-weight: 500; margin-top: -10px; margin-bottom: 50px;}
+.bg-categories .categories{ width: 100%; height: max-content; text-align: left;}
+.bg-categories .categories .cattop{ width: 100%; height: 220px;}
+.bg-categories .categories .catbot{ width: 100%; height: 220px;}
+.cattop .cat1{flex: 7; background-image: url('../img/product/batik2.jpg'); background-size: cover; background-position: center; height: 220px}
+.cattop .text1{flex: 5; height: 220px; background-color: #F9F9F9}
+.cattop .cat2{flex: 6; background-image: url('../img/product/keramik.jpg'); background-size: cover; background-position: center; height: 220px}
+.catbot .text2{flex: 5; height: 220px; background-color: #F9F9F9}
+.catbot .cat3{flex: 7; background-image: url('../img/product/keris.jpg'); background-size: cover; background-position: center; height: 220px}
+.catbot .text3{flex: 6; height: 220px; background-color: #F9F9F9}
+.categories h4{ font-family: rr; color: #F05849; font-size: 20px; font-weight: 500 ; padding-left: 20px;}
+.categories p{ font-family: rl; font-size: 15px; margin-top: -10px; padding-left: 20px; padding-right: 20px; margin-bottom: 20px;}
+.categories a{ margin-left: 20px; padding: 7px 20px; font-family: rr; text-decoration: none; color: #F05849; border: 1px solid #F05849; transition: .5s; }
+.categories a:hover{ background-color: #F05849; color: #FFF; box-shadow: 0 0 30px -5px #F05849;}
+.bg-categories .see-all{ 
+	padding: 10px 25px; 
+	background-color: #FFF; 
+	font-family: rr; 
+	color: #F05849; 
+	border: 2px solid #F05849; 
+	text-decoration: none; 
+	margin-top: 20px;
+	transition: .5s;
+}
+.bg-categories .see-all:hover{ background-color: #F05849; color: #FFF; box-shadow: 0 0 30px #F05849;}
+
+/* benefits */
+.bg-benefits{width: 100%; height: 90vh; padding-bottom: 10px; text-align: center; padding-top: 50px;}
+.bg-benefits h1{font-family: rb; color: #F05849;}
+.bg-benefits h3{font-family: rr; color: #707070; font-weight: 500}
+.bg-benefits h3 span{color: #F05849; font-weight: bold;}
+.bg-benefits .benefits{margin-top: 10px; width: 330px; height: 450px; background-size: cover; background-position: center; position: relative;}
+.bg-benefits .benefits1{ background-image: url('../img/benefits/1.jpg'); }
+.bg-benefits .benefits2{ background-image: url('../img/benefits/2.jpg'); }
+.bg-benefits .benefits3{ background-image: url('../img/benefits/3.jpg'); }
+.bg-benefits .benefit-text{ position: absolute; width: 100%; height: 12vh; background-color: #FFF; bottom: 0; }
+.bg-benefits .benefit-text p{ color: #707070; font-family: rl; font-size: 15px; padding: 0 25px;}
+
+/* hot-item */
+.bg-hot-item{background-color: #F9F9F9; padding-top: 50px; width: 100%; height: 80vh; text-align: center; padding-bottom: 15px;}
+.bg-hot-item h1{font-family: rb; color: #F05849;}
+.bg-hot-item h3{font-family: rr; color: #707070; font-weight: 500}
+.bg-hot-item h3 span{color: #F05849; font-weight: bold;}
+.bg-hot-item .hot-item{text-align: left; margin-top: 50px; width: 250px; height: 320px; }
+.bg-hot-item .hot-item .img{ 
+	width: 100%; 
+	height: 250px; 
+	background-color: #FFF; 
+	background-size: 50%; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.3);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.bg-hot-item .hot-item .overlay-i{
+	position: absolute;
+	height: 150px;
+	width: 50px;
+	bottom: 5px;
+	transform: translateX(-60px);
+	transition: .5s;
+}
+.bg-hot-item .hot-item:hover .overlay-i{
+	transform: translateX(5px);
+} 
+.bg-hot-item .hot-item .overlay-i a{ text-decoration: none; padding: 10px; background-color: #000; color: #FFF; transition: .3s;}
+.bg-hot-item .hot-item .overlay-i a:hover{ color: #F05849; }
+.bg-hot-item .hot-item .img1{ background-image: url('../img/product/hot/wayang.png'); }
+.bg-hot-item .hot-item .img2{ background-image: url('../img/product/hot/keramik.png'); }
+.bg-hot-item .hot-item .img3{ background-image: url('../img/product/hot/keris.png'); }
+.bg-hot-item .hot-item .img4{ background-image: url('../img/product/hot/batik.png'); }
+.bg-hot-item .hot-item h4, .bg-hot-item .hot-item h5{margin: 0; padding: 0 10px;}
+.bg-hot-item .hot-item h4{ font-family: rr; color: #000; padding-top: 10px; }
+.bg-hot-item .hot-item h5{ font-family: rl; color: #707070 }
+
+/* sell */
+.bg-sell{padding-top: 70px; width: 100%; height: 100vh;}
+.bg-sell .sell-left, .bg-sell .sell-right{width: 50%; height: 100vh;}
+.bg-sell .sell-left img{width: 80%;}
+.bg-sell .sell-right .right{width: 80%; height: 80vh;}
+.bg-sell .sell-right .right h1{ font-family: rb; color: #F05849;}
+.bg-sell .sell-right .right p{font-family: rr; color: #707070; width: 70%}
+.bg-sell .sell-right .right p span{font-family: rb; color: #F05849}
+.bg-sell .sell-right .right .form-group{ width: 70%; margin: 20px 0; }
+.bg-sell .sell-right .right .form-group label{font-family: rb; color: #F05849;}
+.bg-sell .sell-right .right .form-group input{padding: 10px 20px; margin-top: 5px; font-family: rr; outline: none;}
+.bg-sell .sell-right .right .button-sell{width: 70%; text-align: center; background-color: #F05849}
+.bg-sell .sell-right .right .button-sell a{ display: block; text-decoration: none; color: #FFF; font-family: rr; padding: 10px 0; }
+
+/* subscription */
+.bg-subs{padding-top: 50px; width: 100%; height: 100vh; background-image: url('../img/subs.jpg'); background-size: cover; background-position: center; background-attachment: fixed;}
+.bg-subs .subs{width: 50%; height: 60vh; background-color: #FFF; padding-left: 50px;}
+.bg-subs .subs h1{color: #F05849; font-family: rb; font-size: 50px; margin: 0; padding: 0;}
+.bg-subs .subs h3{color: #707070; font-family: rr; font-weight: 500; font-size: 25px; width: 80%}
+.bg-subs .subs h3 span{color: #F05849; font-family: rb;}
+.bg-subs .subs input{
+	width: 300px; 
+	background-color: #FFF; 
+	font-family: rr; 
+	padding: 15px 20px; 
+	border: 2px solid #707070; 
+	color: #707070;
+	outline: none; 
+	font-size: 15px;
+}
+.bg-subs .subs a{background-color: #707070; padding: 15px 25px; text-decoration: none; color: #FFF; font-family: rr;}
+
+/* extras */
+.bg-extras{width: 100%; height: 20vh;}
+.bg-extras .extras{ width: 250px; height: 20vh;}
+.bg-extras .extras img{ width: 70px; }
+.bg-extras .extras h5{ padding: 0 20px; font-family: rr; font-size: 15px; color: #707070}
+
+/* footer */
+.bg-footer{ width: 100%; height: 50vh; padding: 20px 0; background-color: #F6F6F6; }
+.bg-footer .footer{ width: 250px; height: max-content;}
+.bg-footer ul{ list-style: none;}
+.bg-footer ul li a{ text-decoration: none; color: #707070}
+/* about */
+.bg-footer .about{ width: 300px }
+.bg-footer .about img{ width: 80%; }
+.bg-footer .about ul{ width: 80%; padding-left: 0;}
+.bg-footer .about ul li{ display: inline;}
+.bg-footer .about ul li a{font-size: 25px}
+.bg-footer .about h5{margin: 0; font-size: 20px; color: #707070; font-family: rr;}
+.bg-footer .about i{ margin: 0 15px; }
+.bg-footer .about h5 span{color: #F05849}
+.bg-footer .about h4{ font-family: rr; color: #707070; font-size: 17px; margin-left: 15px; margin-top: 5px; }
+.bg-footer .about h4 i{ margin: 0; color: #F05849 }
+/* help */
+.bg-footer .help .label{ color: #F05849; text-transform: uppercase; font-family: rb; font-size: 17px; padding-bottom: 20px; }
+.bg-footer .help ul li{ padding: 5px 0; color: #707070; font-family: rb; font-size: 25px }
+/* app */
+.bg-footer .app .label{ color: #F05849; text-transform: uppercase; font-family: rb; font-size: 17px; padding-bottom: 20px; }
+.bg-footer .app img{width: 70%; margin-left: 40px;}
+/* creditcard */
+.bg-footer .creditcard .label{ color: #F05849; text-transform: uppercase; font-family: rb; font-size: 17px; padding-bottom: 20px; }
+.bg-footer .creditcard img{width: 50%; margin-left: 40px;}
+
